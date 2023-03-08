@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class characterController : MonoBehaviour
 {
+    public Rigidbody rigidbody;
+    
     public GameObject rArm;
     public GameObject lArm;
     public GameObject rLeg;
@@ -195,4 +197,14 @@ public class characterController : MonoBehaviour
             return Physics.Raycast(limb.transform.position, -Vector3.up, backRayLength + 0.1f);
         }
     }
+
+
+    private void ClimbingWall ()
+    {
+
+        rigidbody.useGravity = false;
+
+
+    }
+
 }

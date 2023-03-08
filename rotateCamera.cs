@@ -17,13 +17,16 @@ public class rotateCamera : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey("q") && direction < 1){
+        if (Input.GetKey("q") && direction < 1)
+        {
             direction += 0.01f;
-        } else if (direction > 0)
+        }
+        else if (direction > 0)
         {
             direction -= 0.01f;
         }
-        if (Input.GetKey("e") && direction > -1){
+        if (Input.GetKey("e") && direction > -1)
+        {
             direction -= 0.01f;
         }
         else if (direction < 0)
