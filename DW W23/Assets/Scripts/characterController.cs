@@ -202,7 +202,7 @@ public class characterController : MonoBehaviour
     private void ClimbingWall ()
     {
 
-        rigidbody.useGravity = false;
+       // rigidbody.useGravity = false;
 
 
     }
